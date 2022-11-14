@@ -5,8 +5,14 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-ssize_t getline(char **line, size_t *buflen, FILE *stream);
-char** split_line(char *line); 
-char* read_line();
+#include <sys/types.h>
+#include <sys/wait.h>
+void alx_exit_builtin(void);
+int alx_fork(void);
+void alx_exec(char **args);
+void alx_prompt(void);
+char *alx_read_line(void);
+char **alx_plit_line(char *line);
+void alx_cd(char **rgs);
 #endif
 

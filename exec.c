@@ -1,4 +1,4 @@
-#include <main.h>
+#include "shell.h"
 
 /**
  * alx_exec- executes given command or launch program
@@ -9,7 +9,7 @@
 void alx_exec(char **args)
 {
 	pid_t child_pid = fork();
-	pid_t wpid;
+	/*pid_t wpid;*/
 	int status;
 
 	if (child_pid == 0)
@@ -29,8 +29,8 @@ void alx_exec(char **args)
 	else
 	{
 		do {
-			waitpid(child_pid, &status, WUNRACED);
+			waitpid(child_pid, &status, WUNTRACED);
 		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
-	return (1);
+	/*return (1);*/
 }
