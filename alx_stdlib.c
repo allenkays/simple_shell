@@ -66,7 +66,7 @@ char *aux_itoa(int n)
 }
 
 /**
- *  - converts a string to an integer.
+ * _atoi - converts a string to an integer.
  * @s: input string.
  * Return: integer.
  */

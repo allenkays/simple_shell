@@ -23,7 +23,7 @@ void free_parameters(input_params *datash)
  * set_parameters - Initialize parameters structure
  *
  * @datash: parameters structure
- * @**argv: argument vector
+ * @argv: argument vector
  * Return: no return
  */
 void set_parameters(input_params *datash, char **argv)
@@ -53,12 +53,12 @@ void set_parameters(input_params *datash, char **argv)
 /**
  * main - Entry point
  *
- * @ac: argument count
- * @**argv: argument vector
+ * @argc: argument count
+ * @argv: argument vector
  *
  * Return: 0 on success.
  */
-int main(int ac, char **argv)
+int main(int argc, char **argv)
 {
 	input_params datash;
 	(void) ac;
