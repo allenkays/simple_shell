@@ -1,5 +1,5 @@
-#ifndef  SHELL_H 
-#define  SHELL_H
+#ifndef SHELL_H
+#define SHELL_H
 
 #include <stdio.h>
 #include <unistd.h>
@@ -22,7 +22,7 @@ extern char **environ;
 
 /**
  * struct parameters - struct that contains all relevant parameters on runtime
- * @**argv: argument vector
+ * @argv: argument vector
  * @input: command line written by the user
  * @args: tokens of the command line
  * @status: last status of the shell
