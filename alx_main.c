@@ -61,7 +61,7 @@ void set_parameters(input_params *datash, char **argv)
 int main(int argc, char **argv)
 {
 	input_params datash;
-	(void) ac;
+	(void) argc;
 
 	signal(SIGINT, get_sigint);
 	set_parameters(&datash, argv);
